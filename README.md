@@ -17,16 +17,15 @@ LwcObjectLookup
 
 lwcObjectLookupController class is also required for LwcObjectLookup.
 
-Step 1:
+Step 1: Create a Lightning Web Component named as ‘lwcObjectLookup’ and also create an APEX controller class named as ‘lwcObjectLookupController’.
 
-	Create a Lightning Web Component named as ‘lwcObjectLookup’ and also create an APEX controller class named as ‘lwcObjectLookupController’.
-
-	The component folder contains three supporting files:
+The component folder contains three supporting files:
 lwcObjectLookup.html
 lwcObjectLookup.js
 
 
 lwcObjectLookup.html
+
 ```<template>
        <template if:false={selectedRecord}>
            <div >
@@ -84,7 +83,8 @@ lwcObjectLookup.html
                    </div>
            </template>
        </div>
-   </template>```
+   </template>
+```
 
 
 lwcObjectLookup.js
@@ -165,12 +165,14 @@ export default class LwcObjectLookup extends LightningElement {
        this.dispatchEvent(selectedRecordEvent);
    }
  
-}```
+}
+
+```
 
 
 Step 2: Create a Lightning Web Component named as ‘lwcObjectDynamicRow‘.
 
-	The component folder contains three supporting files:
+The component folder contains three supporting files:
 lwcObjectDynamicRow.html
 lwcObjectDynamicRow.js
 lwcObjectDynamicRow.css (you need to create it manually)
@@ -199,7 +201,9 @@ lwcObjectDynamicRow.html
            </div>
        </div>
    </fieldset>
-</template>```
+</template>
+
+```
 
 lwcObjectDynamicRow.js
 ```/* eslint-disable no-console */
@@ -248,19 +252,13 @@ lwcObjectDynamicRow.css
 ```
 
 
+Step 3: Create a Lightning Web Component named as ‘lwcDynamicRowContainer’.
 
-
-
-
-
-Step 3: 
-
-	Create a Lightning Web Component named as ‘lwcDynamicRowContainer’.
-
-	The component folder contains three supporting files:
+The component folder contains three supporting files:
 lwcDynamicRowContainer.html
 lwcDynamicRowContainer.js
 lwcDynamicRowContainer.js-meta.xml
+
 
 lwcDynamicRowContainer.html
 ```
@@ -302,6 +300,8 @@ lwcDynamicRowContainer.html
  
 </template>
 ```
+
+
 lwcDynamicRowContainer.js
 
 ```
@@ -356,6 +356,7 @@ export default class LwcDynamicRowContainer extends LightningElement {
  
 }
 ```
+
 lwcDynamicRowContainer.js-meta.xml 
 Update the existing meta-data file so that you can add this component anywhere you like.
 
