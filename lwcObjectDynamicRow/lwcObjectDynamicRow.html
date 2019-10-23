@@ -1,0 +1,24 @@
+<template>
+    <fieldset class="slds-form-element slds-form-element_compound">
+        <div class="slds-form-element__control">
+            <div class="slds-form-element__row">
+                <div class="slds-size_10-of-12">
+                    <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <c-lwc-object-lookup iconname="standard-account" object-name="Account" searchfield="Name" default-item={defaultItem} onselectedrec={handleLookupChange}></c-lwc-object-lookup>
+                    </div>
+                    </div>
+                </div>
+                <div class="slds-size_2-of-12">
+                    <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <lightning-button-icon class="del_input button" onclick={handleDelete} icon-name="utility:close" alternative-text="close"></lightning-button-icon> &nbsp;
+                        <lightning-button-icon class="del_input button" onclick={handleAdd} icon-name="utility:add" alternative-text="Add"></lightning-button-icon>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </fieldset>
+</template>
