@@ -27,7 +27,7 @@ lwcObjectLookup.js
 
 
 lwcObjectLookup.html
-<template>
+```<template>
        <template if:false={selectedRecord}>
            <div >
                <c-lwc-project-lookup-search-component
@@ -84,11 +84,11 @@ lwcObjectLookup.html
                    </div>
            </template>
        </div>
-   </template>
+   </template>```
 
 
 lwcObjectLookup.js
-/* eslint-disable no-console */
+```/* eslint-disable no-console */
 import { LightningElement, track, api } from 'lwc';
 import findRecords from '@salesforce/apex/lwcObjectLookupController.findRecords';
 export default class LwcObjectLookup extends LightningElement {
@@ -165,7 +165,7 @@ export default class LwcObjectLookup extends LightningElement {
        this.dispatchEvent(selectedRecordEvent);
    }
  
-}
+}```
 
 
 Step 2: Create a Lightning Web Component named as ‘lwcObjectDynamicRow‘.
@@ -176,7 +176,7 @@ lwcObjectDynamicRow.js
 lwcObjectDynamicRow.css (you need to create it manually)
 
 lwcObjectDynamicRow.html
-<template>
+```<template>
    <fieldset class="slds-form-element slds-form-element_compound">
        <div class="slds-form-element__control">
            <div class="slds-form-element__row">
@@ -199,10 +199,10 @@ lwcObjectDynamicRow.html
            </div>
        </div>
    </fieldset>
-</template>
+</template>```
 
 lwcObjectDynamicRow.js
-/* eslint-disable no-console */
+```/* eslint-disable no-console */
 import { LightningElement, track, api } from 'lwc';
  
 export default class LwcObjectDynamicRow extends LightningElement {
@@ -240,10 +240,12 @@ export default class LwcObjectDynamicRow extends LightningElement {
  
  
 }
+```
 
 lwcObjectDynamicRow.css
+```
 .slds-p-around_x-small {padding: 0px !important;}
-
+```
 
 
 
@@ -261,6 +263,7 @@ lwcDynamicRowContainer.js
 lwcDynamicRowContainer.js-meta.xml
 
 lwcDynamicRowContainer.html
+```
 <template>
   
    <article class="slds-card" style="width:800px; margin:30px auto;">
@@ -298,8 +301,10 @@ lwcDynamicRowContainer.html
    </article>
  
 </template>
-
+```
 lwcDynamicRowContainer.js
+
+```
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
 import { LightningElement, track } from 'lwc';
@@ -350,10 +355,11 @@ export default class LwcDynamicRowContainer extends LightningElement {
    }
  
 }
-
+```
 lwcDynamicRowContainer.js-meta.xml 
 Update the existing meta-data file so that you can add this component anywhere you like.
 
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="lwcDynamicRowContainer">
    <apiVersion>47.0</apiVersion>
@@ -366,7 +372,7 @@ Update the existing meta-data file so that you can add this component anywhere y
        <target>lightningCommunity__Default</target>
    </targets>
 </LightningComponentBundle>
-
+```
 
 
 Enjoy the components and let me know if you have question.
