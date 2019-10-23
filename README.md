@@ -1,5 +1,5 @@
 # salesforce-lwc-dynamic-line-items
-##Salesforce Lightning Web Component - Dynamic Line Items
+## Salesforce Lightning Web Component - Dynamic Line Items
 
 Salesforce ecosystem is catching up with the modern web technologies, and if you are a developer then you are already aware of Lightning Web Components (LWC). If you left behind and don’t know much about Lightning Web Component (LWC) then go to the trailhead and learn about it.
 
@@ -19,14 +19,14 @@ LwcObjectLookupRecordList
 
 lwcObjectLookupController class is also required for LwcObjectLookup.
 
-######Step 1: Create a Lightning Web Component named as ‘LwcObjectLookupSearchComponent’.
+### Step 1: Create a Lightning Web Component named as ‘LwcObjectLookupSearchComponent’.
 
 The component folder contains two supporting files:
 
 a. LwcObjectLookupSearchComponent.html
 b. LwcObjectLookupSearchComponent.js
 
-######LwcObjectLookupSearchComponent.html
+#### LwcObjectLookupSearchComponent.html
 ```
 <template>
         <div class="slds-grid slds-wrap">
@@ -42,7 +42,7 @@ b. LwcObjectLookupSearchComponent.js
     </template>
 ```
 
-####LwcObjectLookupSearchComponent.js
+#### LwcObjectLookupSearchComponent.js
 ```
 import { LightningElement, track } from 'lwc';
 
@@ -65,7 +65,7 @@ export default class LwcObjectLookupSearchComponent extends LightningElement {
 }
 ```
 
-Step 2: Create a Lightning Web Component named as ‘LwcObjectLookupRecordList’.
+### Step 2: Create a Lightning Web Component named as ‘LwcObjectLookupRecordList’.
 
 The component folder contains three supporting files:
 
@@ -73,7 +73,7 @@ a. LwcObjectLookupRecordList.html
 b. LwcObjectLookupRecordList.js
 c. LwcObjectLookupRecordList.css  (you need to create it manually)
 
-####LwcObjectLookupRecordList.html
+#### LwcObjectLookupRecordList.html
 ```
 <template>
     <div >
@@ -102,7 +102,7 @@ c. LwcObjectLookupRecordList.css  (you need to create it manually)
     </div>
 </template>
 ```
-####LwcObjectLookupRecordList.js
+#### LwcObjectLookupRecordList.js
 ```
 import { LightningElement, api } from 'lwc';
 
@@ -125,7 +125,7 @@ export default class LwcObjectLookupRecordList extends LightningElement {
 }
 ```
 
-####LwcObjectLookupRecordList.css
+#### LwcObjectLookupRecordList.css
 ```
 .slds-p-around_x-small{padding:0}
 .slds-p-around--x-small{padding:0}
@@ -149,14 +149,14 @@ export default class LwcObjectLookupRecordList extends LightningElement {
 .slds-listbox--vertical .slds-listbox__option--entity{padding:10px 0 0 0}
 ```
 
-###Step 3: Create a Lightning Web Component named as ‘lwcObjectLookup’ and also create an APEX controller class named as ‘lwcObjectLookupController’.
+### Step 3: Create a Lightning Web Component named as ‘lwcObjectLookup’ and also create an APEX controller class named as ‘lwcObjectLookupController’.
 
 The component folder contains two supporting files:
 lwcObjectLookup.html
 lwcObjectLookup.js
 
 
-####lwcObjectLookup.html
+#### lwcObjectLookup.html
 
 ```<template>
        <template if:false={selectedRecord}>
@@ -219,7 +219,7 @@ lwcObjectLookup.js
 ```
 
 
-####lwcObjectLookup.js
+#### lwcObjectLookup.js
 ```/* eslint-disable no-console */
 import { LightningElement, track, api } from 'lwc';
 import findRecords from '@salesforce/apex/lwcObjectLookupController.findRecords';
@@ -302,14 +302,14 @@ export default class LwcObjectLookup extends LightningElement {
 ```
 
 
-###Step 4: Create a Lightning Web Component named as ‘lwcObjectDynamicRow‘.
+### Step 4: Create a Lightning Web Component named as ‘lwcObjectDynamicRow‘.
 
 The component folder contains three supporting files:
 lwcObjectDynamicRow.html
 lwcObjectDynamicRow.js
 lwcObjectDynamicRow.css (you need to create it manually)
 
-####lwcObjectDynamicRow.html
+#### lwcObjectDynamicRow.html
 ```<template>
    <fieldset class="slds-form-element slds-form-element_compound">
        <div class="slds-form-element__control">
@@ -337,7 +337,7 @@ lwcObjectDynamicRow.css (you need to create it manually)
 
 ```
 
-####lwcObjectDynamicRow.js
+#### lwcObjectDynamicRow.js
 ```/* eslint-disable no-console */
 import { LightningElement, track, api } from 'lwc';
  
@@ -378,13 +378,13 @@ export default class LwcObjectDynamicRow extends LightningElement {
 }
 ```
 
-####lwcObjectDynamicRow.css
+#### lwcObjectDynamicRow.css
 ```
 .slds-p-around_x-small {padding: 0px !important;}
 ```
 
 
-###Step 5: Create a Lightning Web Component named as ‘lwcDynamicRowContainer’.
+### Step 5: Create a Lightning Web Component named as ‘lwcDynamicRowContainer’.
 
 The component folder contains four supporting files:
 lwcDynamicRowContainer.html
@@ -392,7 +392,7 @@ lwcDynamicRowContainer.js
 lwcDynamicRowContainer.js-meta.xml
 
 
-####lwcDynamicRowContainer.html
+#### lwcDynamicRowContainer.html
 ```
 <template>
   
@@ -434,7 +434,7 @@ lwcDynamicRowContainer.js-meta.xml
 ```
 
 
-####lwcDynamicRowContainer.js
+#### lwcDynamicRowContainer.js
 
 ```
 /* eslint-disable no-alert */
@@ -489,7 +489,7 @@ export default class LwcDynamicRowContainer extends LightningElement {
 }
 ```
 
-####lwcDynamicRowContainer.js-meta.xml 
+#### lwcDynamicRowContainer.js-meta.xml 
 Update the existing meta-data file so that you can add this component anywhere you like.
 
 ```
