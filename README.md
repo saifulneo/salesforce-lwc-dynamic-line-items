@@ -1,5 +1,5 @@
 # salesforce-lwc-dynamic-line-items
-##Salesforce Lightning Web Component - Dynamic Line Items##
+##Salesforce Lightning Web Component - Dynamic Line Items
 
 Salesforce ecosystem is catching up with the modern web technologies, and if you are a developer then you are already aware of Lightning Web Components (LWC). If you left behind and don’t know much about Lightning Web Component (LWC) then go to the trailhead and learn about it.
 
@@ -19,14 +19,14 @@ LwcObjectLookupRecordList
 
 lwcObjectLookupController class is also required for LwcObjectLookup.
 
-###Step 1: Create a Lightning Web Component named as ‘LwcObjectLookupSearchComponent’.
+######Step 1: Create a Lightning Web Component named as ‘LwcObjectLookupSearchComponent’.
 
 The component folder contains two supporting files:
 
 a. LwcObjectLookupSearchComponent.html
 b. LwcObjectLookupSearchComponent.js
 
-####LwcObjectLookupSearchComponent.html
+######LwcObjectLookupSearchComponent.html
 ```
 <template>
         <div class="slds-grid slds-wrap">
