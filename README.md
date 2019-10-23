@@ -7,7 +7,7 @@ Today I am going to introduce you to a new mechanism of how we can create dynami
 
 This is how our final UI will look like.
 
-[![VIDEO](https://img.youtube.com/vi/KcomK1Xvq0A/0.jpg)](https://www.youtube.com/watch?v=KcomK1Xvq0A)
+[![VIDEO](https://img.youtube.com/vi/N3LlreSDkpo/0.jpg)](https://www.youtube.com/watch?v=N3LlreSDkpo)
 
 
 The whole mechanism is divided into five supporting components.
