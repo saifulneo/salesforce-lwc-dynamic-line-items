@@ -1,0 +1,20 @@
+.slds-p-around_x-small{padding:0}
+.slds-p-around--x-small{padding:0}
+
+.slds-listbox_vertical .slds-listbox__option_entity, 
+.slds-listbox_vertical .slds-listbox__option--entity, 
+.slds-listbox--vertical .slds-listbox__option_entity, 
+.slds-listbox--vertical .slds-listbox__option--entity{background-color:#fff}
+
+.slds-listbox_vertical .slds-listbox__option_entity:hover, 
+.slds-listbox_vertical .slds-listbox__option--entity:hover, 
+.slds-listbox--vertical .slds-listbox__option_entity:hover, 
+.slds-listbox--vertical .slds-listbox__option--entity{background-color:#fafafa}
+
+.slds-p-left_small, .slds-p-left--small{padding-left:0}
+.slds-p-left_small:first-child, .slds-p-left--small:first-child{margin-top:-1px;border:1px solid #ebebeb}
+
+.slds-listbox_vertical .slds-listbox__option_entity, 
+.slds-listbox_vertical .slds-listbox__option--entity, 
+.slds-listbox--vertical .slds-listbox__option_entity, 
+.slds-listbox--vertical .slds-listbox__option--entity{padding:10px 0 0 0}
